@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import MovieListBox from "./MovieListBox";
 import WatchedList from "./WatchedList";
 
-const MovieList = () => {
+const MovieList = ({ movies }) => {
   return (
     <main className="main">
-      <MovieListBox />
+      <MovieListBox movies={movies} />
       <WatchedList />
     </main>
   );
