@@ -40,9 +40,9 @@ const App = () => {
 
   return (
     <>
-      <Ripple />
+      {/* <Ripple /> */}
       {/* <Weather /> */}
-      {/* <PopCorn /> */}
+      <PopCorn />
     </>
   );
 };

@@ -26,18 +26,24 @@ const Ripple = () => {
   }, [ripple]);
 
   function handelClick(e) {
+    const rect = e.currentTarget.getBoundingClientRect();
+    const offsetX = e.clientX - rect.left;
+    const offsetY = e.clientY - rect.top;
     setPosition({
-      x: e.clientX - e.target.offsetLeft,
-      y: e.clientY - e.target.offsetTop,
+      x: offsetX,
+      y: offsetY,
     });
   }
   return (
-    <RippleButton onClick={handelClick}>
-      {ripple && (
-        <RippleEffect left={position.x} top={position.y}></RippleEffect>
-      )}
-      Click me
-    </RippleButton>
+    <>
+      <h1>button</h1>
+      <RippleButton onClick={handelClick}>
+        {ripple && (
+          <RippleEffect left={position.x} top={position.y}></RippleEffect>
+        )}
+        Click me
+      </RippleButton>
+    </>
   );
 };
 

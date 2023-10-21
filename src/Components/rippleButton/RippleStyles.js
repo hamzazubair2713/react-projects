@@ -30,7 +30,7 @@ export const RippleEffect = styled.span`
   top: ${({ top }) => top && `${top}px`};
   left: ${({ left }) => left && `${left}px`};
   transform: translate(-50%, -50%);
-  background: #fff;
+  background: rgba(255, 255, 255, 0.5);
   border-radius: 50%;
   animation: ${Animation} 1s forwards;
 `;
