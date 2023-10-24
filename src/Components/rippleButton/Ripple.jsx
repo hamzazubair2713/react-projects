@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { RippleButton, RippleEffect } from "./RippleStyles";
 
-const Ripple = () => {
+const Ripple = ({ children }) => {
   const [position, setPosition] = useState({ x: -1, y: -1 });
   const [ripple, setRipple] = useState(false);
 
@@ -36,12 +36,11 @@ const Ripple = () => {
   }
   return (
     <>
-      <h1>button</h1>
       <RippleButton onClick={handelClick}>
         {ripple && (
           <RippleEffect left={position.x} top={position.y}></RippleEffect>
         )}
-        Click me
+        {children}
       </RippleButton>
     </>
   );

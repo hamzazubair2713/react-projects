@@ -9,6 +9,8 @@ import SplitBill from "./Components/splitBill/SplitBill";
 import PopCorn from "./Components/usePopcorn/PopCorn";
 import Weather from "./Components/Weather/Weather";
 import Ripple from "./Components/rippleButton/Ripple";
+import Todo from "./Components/TodoWithContext/Todo";
+import "./index.css";
 const App = () => {
   // const url = `https://api.openweathermap.org/data/2.5/weather?lat=31.4738496&lon=74.3647208&appid=9e3947b2926d9362fcfb6078c43ed83d`;
   // const url = `https://nominatim.openstreetmap.org/search?format=json&q=lahore`;
@@ -40,9 +42,10 @@ const App = () => {
 
   return (
     <>
+      <Todo />
       {/* <Ripple /> */}
       {/* <Weather /> */}
-      <PopCorn />
+      {/* <PopCorn /> */}
     </>
   );
 };

@@ -91,3 +91,21 @@ h3 {
 .close:hover {
   color: #7950f2;
 } */
+input {
+  height: 50px;
+  border: none;
+  outline: none;
+  width: 500px;
+  margin-right: 20px;
+  border-radius: 20px;
+  padding: 0 20px;
+}
+.todos-wrapper {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.cursor {
+  cursor: pointer;
+}

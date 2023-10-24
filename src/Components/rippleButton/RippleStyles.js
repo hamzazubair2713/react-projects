@@ -12,6 +12,7 @@ export const RippleButton = styled.button`
   position: relative;
   overflow: hidden;
   z-index: 2;
+  color: #fff;
 `;
 export const Animation = keyframes`
 0%{
