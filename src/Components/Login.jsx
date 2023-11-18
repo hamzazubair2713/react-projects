@@ -90,37 +90,39 @@ const Login = () => {
 
   async function handelLogin(e) {
     e.preventDefault();
-    const validatemail = emailRegex.test(email);
-    const validatepassword = passwordRegex.test(password);
-    console.log(validatemail, validatepassword);
+    // const validatemail = emailRegex.test(email);
+    // const validatepassword = passwordRegex.test(password);
+    // console.log(validatemail, validatepassword);
 
-    if (validatemail && validatepassword) {
-      const resp = await fetch(`http://localhost:3030/user?email=${email}`);
-      const data = await resp.json();
-      console.log(data);
-    }
-    // console.log(emailRef.current.value); getting value useing Ref
+    // if (validatemail && validatepassword) {
+    //   const resp = await fetch(`http://localhost:3030/user?email=${email}`);
+    //   const data = await resp.json();
+    //   console.log(data);
+    // }
+    if (emailRef.current.elements.mail.value)
+      console.log(emailRef.current.elements.password.value);
   }
   return (
     <Container>
-      <FormContainer onSubmit={handelLogin}>
+      <FormContainer onSubmit={handelLogin} ref={emailRef}>
         <Title>Login Here</Title>
         <Label htmlFor="username">Username</Label>
         <Input
           type="text"
           placeholder="Email or Phone"
           id="username"
+          name="mail"
           // ref={emailRef}
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
+          // value={email}
+          // onChange={(e) => setEmail(e.target.value)}
         />
         <Label htmlFor="password">Password</Label>
         <Input
           type="password"
           placeholder="Password"
           id="password"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
+          // value={password}
+          // onChange={(e) => setPassword(e.target.value)}
         />
         <Button>Log In</Button>
         <p>
