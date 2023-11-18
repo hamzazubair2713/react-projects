@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Ripple from "../rippleButton/Ripple";
+import { TodoProvider } from "./context";
 
 const Todo = () => {
   const [todo, setTodo] = useState([]);
@@ -27,6 +28,15 @@ const Todo = () => {
     const filterData = todo.filter((elem) => elem.id !== id);
     setTodo(filterData);
   }
+  useEffect(() => {
+    const todo = JSON.parse(localStorage.getItem("todos"));
+    if (todo && todo.length > 0) {
+      setTodo(todo);
+    }
+  }, []);
+  useEffect(() => {
+    localStorage.setItem("todos", JSON.stringify(todo));
+  }, [todo]);
 
   return (
     <>

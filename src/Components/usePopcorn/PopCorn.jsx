@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./popCorn.css";
 import Navbar from "./Navbar";
 import MovieList from "./MovieList";
+import { useEffect } from "react";
 
 const PopCorn = () => {
   const tempMovieData = [
@@ -28,6 +29,18 @@ const PopCorn = () => {
     },
   ];
   const [movies, setMovies] = useState(tempMovieData);
+  // useEffect(() => {
+  //   (async () => {
+  //     try {
+  //       const resp = await fetch("http://www.omdbapi.com/?apikey=84ab7674&");
+  //       const data = await resp.json();
+  //       console.log(resp.status);
+  //       console.log(data);
+  //     } catch (error) {
+  //       console.log(error);
+  //     }
+  //   })();
+  // }, []);
 
   return (
     <>

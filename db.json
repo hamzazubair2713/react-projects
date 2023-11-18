@@ -1,0 +1,44 @@
+{
+  "user": [
+    {
+      "id": 1698950548476,
+      "email": "admin1@gmail.com",
+      "password": "Hamza@1"
+    },
+    {
+      "id": 1699008039235,
+      "email": "hamza@gamil.com",
+      "password": "ha2@"
+    },
+    {
+      "id": 1699008124870,
+      "email": "saad@gamil.com",
+      "password": "sa2@"
+    },
+    {
+      "id": 1699008192556,
+      "email": "saad@gmail.com",
+      "password": "ad2@"
+    },
+    {
+      "id": 1699008517230,
+      "email": "saad@gmail.com",
+      "password": "ass2@"
+    },
+    {
+      "id": 1699008557082,
+      "email": "saad@gmail.com",
+      "password": "ass2@"
+    },
+    {
+      "id": 1699008842130,
+      "email": "admin1@gmail.com",
+      "password": "as2@"
+    },
+    {
+      "id": 1699008870381,
+      "email": "admin1@gmail.com",
+      "password": "12345678@2da"
+    }
+  ]
+}
