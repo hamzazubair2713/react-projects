@@ -39,7 +39,18 @@ const Weather = () => {
     // console.log({ longitude, latitude });
     getWeather();
   }, []);
-  return <div>{loading ? "Loading....." : "Weather"}</div>;
+  console.log(longitude, latitude);
+  return (
+    <div>
+      {loading ? "Loading....." : "Weather"}
+      <a
+        href={`https://www.openstreetmap.org/#map=16/${latitude}/${longitude}`}
+        target="blank"
+      >
+        click here
+      </a>
+    </div>
+  );
 };
 
 export default Weather;

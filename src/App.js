@@ -14,6 +14,7 @@ import "./index.css";
 import Login from "./Components/Login";
 import SignUp from "./Components/SignUp";
 import { Routes, Route } from "react-router-dom";
+import ReactQuiz from "./Components/Reducer/ReactQuiz";
 const App = () => {
   // const url = `https://api.openweathermap.org/data/2.5/weather?lat=31.4738496&lon=74.3647208&appid=9e3947b2926d9362fcfb6078c43ed83d`;
   // const url = `https://nominatim.openstreetmap.org/search?format=json&q=lahore`;
@@ -45,16 +46,7 @@ const App = () => {
 
   return (
     <>
-      <Login />
-      {/* <Routes>
-        <Route path="/sign-up" element={<SignUp />} />
-        <Route path="/" element={<Login />} />
-      </Routes> */}
-
-      {/* <Todo /> */}
-      {/* <Ripple /> */}
-      {/* <Weather /> */}
-      {/* <PopCorn /> */}
+      <ReactQuiz />
     </>
   );
 };
@@ -74,4 +66,25 @@ export default App;
 }
 {
   /* <SplitBill /> */
+}
+{
+  /* <Todo /> */
+}
+{
+  /* <Ripple /> */
+}
+{
+  /* <Weather /> */
+}
+{
+  /* <PopCorn /> */
+}
+{
+  /* <Login /> */
+}
+{
+  /* <Routes>
+        <Route path="/sign-up" element={<SignUp />} />
+        <Route path="/" element={<Login />} />
+      </Routes> */
 }
